@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.pgraph {
+  margin:25px 0;
+}
+.pgraph1, .pgraph2 {
+	line-height:1.6;
+}
+.pgraph2 {
+  color:#BBBDC0;
+}

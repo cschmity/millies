@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container-fluid.image {
+  padding:0px;
+}
+.mainimage {
+  width:100%;
+}
+.aboutus {
+  padding:50px 0px;
+}
+.reviews {
+  padding:25px 10px;
+}
+.reviews > h1 {
+  color:#337ab7;
+  font-size:42px;
+  font-weight:bold;
+}
+.reviews > h2 {
+	color:#58585B;
+	font-size:20px;
+}
+.logo-small {
+  color: #5B7CB5;
+  font-size: 50px;
+}
+
+.logo {
+  color: #5B7CB5;
+  font-size: 200px;
+}
+.thumbnail {
+  padding:15px;
+  border: none;
+  border-radius: 0;
+  background-color:#E6E7E8;
+}
+.thumbnail > h2 {
+  color:#5B7CB5;
+}
+.thumbnail:hover, .thumbnail:hover h2  {
+  background-color:#5b7cb5;
+  color:#ffffff;
+}
+.tabs > a:hover {
+	text-decoration:none;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.item span {
+  font-style: normal;
+}
+@media screen and (max-width: 767px) {
+.aboutus {
+  padding:20px 0px;
+}
+}
