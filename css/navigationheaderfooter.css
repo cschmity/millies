@@ -2,8 +2,12 @@
 /* CSS Document */
 
 /* navigation */
+
 a {
   color:#5B7CB5;
+}
+hr {
+	width:150px;
 }
 a:hover {
   color:#5B7CB5;
