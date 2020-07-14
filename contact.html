@@ -75,12 +75,20 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="thumbnail">
-        <img src="images/M-2.jpg" alt="Window">
+        <picture>
+          <source srcset="images/window-sm.jpg" media="(max-width: 450px)">
+          <source srcset="images/window-md.jpg">
+          <img src="images/window-md.jpg" alt="window">
+        </picture>
       </div>
     </div>
     <div class="col-sm-6 imgcol">
       <div class="thumbnail">
-        <img src="images/M-1.jpg" alt="interior">
+        <picture>
+          <source srcset="images/interior-sm.jpg" media="(max-width: 450px)">
+          <source srcset="images/interior-md.jpg">
+          <img src="images/interior-md.jpg" alt="interior">
+        </picture>
       </div>
     </div>
   </div>

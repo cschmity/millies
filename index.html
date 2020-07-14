@@ -55,8 +55,14 @@
 
 <div class="container-fluid sitewrap">
 
-<div class="container-fluid image">
-<img class="mainimage" src="images/main.jpg" alt="Millie's On Main">
+<div class="container-fluid">
+  <picture>
+    <source srcset="images/home-xsm.jpg" media="(max-width: 450px)">
+    <source srcset="images/home-sm.jpg" media="(max-width: 767px)">
+    <source srcset="images/home-md.jpg" media="(max-width: 1024px)">
+    <source srcset="images/home-lg.jpg">
+    <img class="image" src="images/home-lg.jpg" alt="Millie's exterior">
+  </picture>
 </div>
 <div class="container-fluid text-center aboutus">
   <h1>CARRY OUT</h1> <h3>11:30 a.m. to 3:00 p.m.</h3>
@@ -67,19 +73,31 @@
   <div class="row">
     <div class="col-sm-4 tabs">
       <a href="contact.html"><div class="thumbnail">
-        <img src="images/glasses.jpg" alt="glasses">
+        <picture>
+          <source srcset="images/beer-sm.jpg" media="(max-width: 450px)">
+          <source srcset="images/beer-md.jpg">
+          <img src="images/beer-md.jpg" alt="Beer Glasses">
+        </picture>
         <h3>CONTACT US</h3>
       </div></a>
     </div>
     <div class="col-sm-4 tabs">
       <a href="menu.html"><div class="thumbnail">
-        <img src="images/whitefish 2.jpg" alt="whitefish">
+        <picture>
+          <source srcset="images/whitefish-sm.jpg" media="(max-width: 450px)">
+          <source srcset="images/whitefish-md.jpg">
+          <img src="images/whitefish-md.jpg" alt="whitefish">
+        </picture>
         <h3>VIEW OUR MENU</h3>
       </div></a>
     </div>
     <div class="col-sm-4 tabs">
       <a href="careers.html"><div class="thumbnail">
-        <img src="images/tap.jpg" alt="tap">
+        <picture>
+          <source srcset="images/taps-sm.jpg" media="(max-width: 450px)">
+          <source srcset="images/taps-md.jpg">
+          <img src="images/taps-md.jpg" alt="Beer Taps">
+        </picture>
         <h3>COME WORK WITH US</h3>
       </div></a>
     </div>
