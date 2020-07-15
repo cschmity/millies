@@ -97,6 +97,9 @@ a:hover {
 .ftr > a > img {
 	max-width:133px;
 }
+.ftr > a {
+	color:#000;
+}
 
 /* site wrap */
 
