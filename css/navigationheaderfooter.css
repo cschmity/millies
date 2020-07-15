@@ -100,6 +100,14 @@ a:hover {
 .ftr > a {
 	color:#000;
 }
+.icon {
+	width:60px;
+	margin:0 15px 10px 15px;
+}
+.up {
+	width:25px;
+	margin:15px;
+}
 
 /* site wrap */
 
