@@ -9,6 +9,10 @@
 .pgraph2 {
   color:#BBBDC0;
 }
+.required >p {
+	color:#ED1C24;
+	margin:0;
+}
 label {
 	margin-top:15px;
 }
@@ -28,4 +32,8 @@ label {
 }
 .form-container {
 	padding:0;
+}
+.thanks {
+	color:#ED1C24;
+	font-weight:bold;
 }
