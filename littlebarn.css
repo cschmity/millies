@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+.pgraph {
+  margin:25px 0 0 0;
+}
+.pgraph1, .pgraph2 {
+	line-height:1.6;
+}
+.pgraph2 {
+  color:#BBBDC0;
+}
+.required >p {
+	color:#ED1C24;
+	margin:0;
+}
+label {
+	margin-top:15px;
+}
+.form-btn {
+	color:#fff;
+	background-color:#5B7CB5;
+	border-color:#95BBE0;
+	font-weight:bold;
+	margin:15px 0;
+}
+.form-btn:hover {
+	color:#5B7CB5;
+	background-color:#fff;
+}
+.form-control {
+	border-color:#5B7CB5 !important;
+}
+.form-container {
+	padding:0;
+}
+.thanks {
+	color:#ED1C24;
+	font-weight:bold;
+}
