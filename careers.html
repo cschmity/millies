@@ -109,16 +109,16 @@
     </div>
     <div class="container-fluid form-container">
       <label for="function">*Can you perform the essential functions of the position identified above with or without a reasonable accommodation?</label><br>
-      <input type="radio" value="Yes"  name="Can You Preform Job Duties" required checked>Yes</input>
+      <input type="radio" value="Yes"  name="Can You Preform Job Duties" required>Yes</input>
       <input type="radio" value="no" name="Can You Preform Job Duties">No</input>
     </div>
     <div class="container-fluid form-container">
       <label for="reffered">Referred by</label><br>
-      <input type="checkbox" value="" name="reffered">Advertisement</label>
-      <input type="checkbox" value="" name="reffered">Employment</label>
-      <input type="checkbox" value="" name="reffered">Friend/Relative/Employee</label>
-      <input type="checkbox" value="" name="reffered">Job Board/Website</label>
-      <input type="checkbox" value="" name="reffered">Walk in</label>
+      <input type="checkbox" value="Advertisement" name="reffered">Advertisement</label>
+      <input type="checkbox" value="Employment" name="reffered">Employment</label>
+      <input type="checkbox" value="Friend/Relative/Employee" name="reffered">Friend/Relative/Employee</label>
+      <input type="checkbox" value="Job Board/Website" name="reffered">Job Board/Website</label>
+      <input type="checkbox" value="Walk in" name="reffered">Walk in</label>
     </div>
     <div class="row">
       <div class="col-sm-6">
@@ -133,62 +133,66 @@
     <div class="row">
       <div class="col-sm-6">
         <label for="name">*First Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="First Name" name="First Name" required>
+        <input type="text" class="form-control" id="name"name="First Name" required>
         <label for="name">*Middle Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Middle Name" name="Middle Name" required>
+        <input type="text" class="form-control" id="name" name="Middle Name" required>
         <label for="name">*Last Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Last Name" name="Last Name" required>
+        <input type="text" class="form-control" id="name" name="Last Name" required>
         <label for="phone">*Phone:</label>
-        <input type="tel" class="form-control" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input type="text" class="form-control" id="phone" placeholder="123-456-7890">
       </div>
       <div class="col-sm-6">
         <label for="address1">*Address Line 1:</label>
-        <input type="text" class="form-control" id="address1" placeholder="Address Line 1" name="Address Line 1" required>
+        <input type="text" class="form-control" id="address1" name="Address Line 1" required>
         <label for="address2">Address Line 2:</label>
-        <input type="text" class="form-control" id="address2" placeholder="Address Line 2" name="Address Line 2">
+        <input type="text" class="form-control" id="address2" name="Address Line 2">
           <div class="row">
           <div class="col-sm-4">
             <label for="city">*City:</label>
-            <input type="text" class="form-control" id="city" placeholder="City" name="City" required>
+            <input type="text" class="form-control" id="city" name="City" required>
           </div>
           <div class="col-sm-4">
             <label for="state">*State:</label>
-            <input type="text" class="form-control" id="state" placeholder="State" name="State" required>
+            <input type="text" class="form-control" id="state" name="State" required>
           </div>
           <div class="col-sm-4">
             <label for="zip">*Zip:</label>
-            <input type="number" class="form-control" id="zip" placeholder="Zip" name="Zip" required>
+            <input type="number" class="form-control" id="zip" name="Zip" required>
           </div>
         </div>
         <label for="email">*Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="email address" name="email address" required>
+        <input type="email" class="form-control" id="email" name="email address" required>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <label for="over18">*Are you over the age of 18?</label><br>
-        <input type="radio"  name="Are you over the age of 18?" required checked>Yes</input>
-        <input type="radio" name="Are you over the age of 18?" >No</input><br>
+        <input type="radio"  name="Are you over the age of 18?" value="Yes" required>Yes</input>
+        <input type="radio" name="Are you over the age of 18?" value="No" >No</input><br>
         <label for="eligableusa">*Are you legally eligible to be employed in the United States?</label><br>
-        <input type="radio" name="eligible to work in usa" required checked>Yes</input>
-        <input type="radio" name="eligible to work in usa" >No</input>
+        <input type="radio" name="eligible to work in usa" value="Yes" required>Yes</input>
+        <input type="radio" name="eligible to work in usa" value="No" >No</input>
       </div>
       <div class="col-sm-6">
         <label for="felony">*Have you EVER been convicted of a felony or misdemeanor?</label><br>
-        <input type="radio" name="Felony/misdemeanor?" required checked>Yes</input>
-        <input type="radio" name="Felony/misdemeanor?" >No</input><br>
+        <input type="radio" name="Felony/misdemeanor?" value="Yes" required>Yes</input>
+        <input type="radio" name="Felony/misdemeanor?" value="No" >No</input><br>
         <label for="pendingcharges">*Do you currently have any pending felony charges against you?</label><br>
-        <input type="radio" name="Pending Charges?" required checked>Yes</input>
-        <input type="radio" name="Pending Charges?" >No</input>
+        <input type="radio" name="Pending Charges?" value="Yes" required>Yes</input>
+        <input type="radio" name="Pending Charges?" value="No" >No</input>
       </div>
     </div>
       
     <div class="container-fluid form-container">
       <label for="FelonyExplained">If you answered yes to either question, please explain. (A conviction or pending charges will not necessarily result in the denial of employment)</label>
-      <textarea type="text" class="form-control" rows="5" id="felonyexplained" placeholder="If you answered yes to either question, please explain. (A conviction or pending charges will not necessarily result in the denial of employment)" name="felonyexplained"></textarea>
+      <textarea type="text" class="form-control" rows="5" id="felonyexplained" name="Felony Explained"></textarea>
       </div>
+      
+ 
     <div class="container-fluid form-container text-center">
     <h2>Education</h2>
+    </div>
+    <div class="container-fluid form-container">
     <label for="highschoolged">High School or GED:</label>
     </div>
     <div class="row">
@@ -198,18 +202,18 @@
       </div>
       <div class="col-sm-3">
         <label for="courseofstudy">Course of Study</label>
-        <input type="text" class="form-control" id="courseofstudy" name="Course of Study">
+        <input type="text" class="form-control" id="courseofstudy" name="HS Course of Study">
       </div>
       <div class="col-sm-3">
         <label for="yearscompleted">No. of Years Completed</label>
-        <input type="text" class="form-control" id="yearscompleted" name="No. of Years Completed">
+        <input type="text" class="form-control" id="yearscompleted" name="HS No. of Years Completed">
       </div>
       <div class="col-sm-3">
         <label for="diploma">Diploma or Degree Received</label>
-        <input type="text" class="form-control" id="diploma" name="Diploma or Degree Received">
+        <input type="text" class="form-control" id="diploma" name="HS Diploma or Degree Received">
       </div>
     </div>
-    <div class="container-fluid form-container text-center">
+    <div class="container-fluid form-container">
       <label for="collegeuniversity">College/University:</label>
     </div>
     <div class="row">
@@ -219,18 +223,18 @@
       </div>
       <div class="col-sm-3">
         <label for="courseofstudy">Course of Study</label>
-        <input type="text" class="form-control" id="courseofstudy" name="Course of Study">
+        <input type="text" class="form-control" id="courseofstudy" name="Coll Course of Study">
       </div>
       <div class="col-sm-3">
         <label for="yearscompleted">No. of Years Completed</label>
-        <input type="text" class="form-control" id="yearscompleted" name="No. of Years Completed">
+        <input type="text" class="form-control" id="yearscompleted" name="Coll No. of Years Completed">
       </div>
       <div class="col-sm-3">
         <label for="diploma">Diploma or Degree Received</label>
-        <input type="text" class="form-control" id="diploma" name="Diploma or Degree Received">
+        <input type="text" class="form-control" id="diploma" name="Coll Diploma or Degree Received">
       </div>
     </div>
-    <div class="container-fluid form-container text-center">
+    <div class="container-fluid form-container">
       <label for="graduatework">Graduate Work:</label>
     </div>
     <div class="row">
@@ -240,18 +244,18 @@
       </div>
       <div class="col-sm-3">
         <label for="courseofstudy">Course of Study</label>
-        <input type="text" class="form-control" id="courseofstudy" name="Course of Study">
+        <input type="text" class="form-control" id="courseofstudy" name="Grad Course of Study">
       </div>
       <div class="col-sm-3">
         <label for="yearscompleted">No. of Years Completed</label>
-        <input type="text" class="form-control" id="yearscompleted" name="No. of Years Completed">
+        <input type="text" class="form-control" id="yearscompleted" name="Grad No. of Years Completed">
       </div>
       <div class="col-sm-3">
         <label for="diploma">Diploma or Degree Received</label>
-        <input type="text" class="form-control" id="diploma" name="Diploma or Degree Received">
+        <input type="text" class="form-control" id="diploma" name="Grad Diploma or Degree Received">
       </div>
     </div>
-    <div class="container-fluid form-container text-center">
+    <div class="container-fluid form-container">
       <label for="vocationaltrade">Vocational or Trade School:</label>
     </div>
     <div class="row">
@@ -261,20 +265,20 @@
       </div>
       <div class="col-sm-3">
         <label for="courseofstudy">Course of Study</label>
-        <input type="text" class="form-control" id="courseofstudy" name="Course of Study">
+        <input type="text" class="form-control" id="courseofstudy" name="Trade Course of Study">
       </div>
       <div class="col-sm-3">
         <label for="yearscompleted">No. of Years Completed</label>
-        <input type="text" class="form-control" id="yearscompleted" name="No. of Years Completed">
+        <input type="text" class="form-control" id="yearscompleted" name="Trade No. of Years Completed">
       </div>
       <div class="col-sm-3">
         <label for="diploma">Diploma or Degree Received</label>
-        <input type="text" class="form-control" id="diploma" name="Diploma or Degree Received">
+        <input type="text" class="form-control" id="diploma" name="Trade Diploma or Degree Received">
       </div>
     </div>
     <div class="container-fluid form-container">
       <label for="schoolsexplain">Other (Please explain)</label>
-      <textarea type="text" class="form-control" rows="5" id="schoolsexplain" name="Schools other Explained"></textarea>
+      <textarea type="text" class="form-control" rows="5" id="schoolsexplain" name="Trade Schools other Explained"></textarea>
     </div>
     <div class="container-fluid form-container text-center">
       <h2>Special Skills and Qualifications</h2>
@@ -299,8 +303,8 @@
     </div>
     <div class="container-fluid form-container">
       <label for="orginizations">*Do you belong to any professional, trade, business or civic organization which may be relevant to the position you seek?</label><br>
-      <input type="radio" name="Belong to Orginizations" required checked>Yes</input>
-      <input type="radio" name="Belong to Orginizations" >No</input>
+      <input type="radio" name="Belong to Orginizations" value="Yes" required>Yes</input>
+      <input type="radio" name="Belong to Orginizations" value="No" >No</input>
     </div>
     <div class="container-fluid form-container">
       <label for="explainorginizations">If yes, please explain and list any offices held. (Omit any organization which reflects your race, color, religion, age, sex, disabilities or other statuses protected by law)</label>
@@ -312,8 +316,8 @@
     <div class="row">
       <div class="col-sm-6">
         <label for="applied4millies">*Have you applied for a job with Millie's before?</label><br>
-        <input type="radio" name="Applied for Millies" required checked>Yes</input>
-        <input type="radio" name="Applied for Millies" >No</input>
+        <input type="radio" name="Applied for Millies" value="Yes" required>Yes</input>
+        <input type="radio" name="Applied for Millies" value="No" >No</input>
       </div>
       <div class="col-sm-6">
         <label for="positionwhen">If YES, identify the position you sought and when:</label>
@@ -323,8 +327,8 @@
     <div class="row">
       <div class="col-sm-6">
         <label for="worked4millies">*Have you worked for Millie's before?</label><br>
-        <input type="radio" name="Worked for Millies" required checked>Yes</input>
-        <input type="radio" name="Worked for Millies" >No</input>
+        <input type="radio" name="Worked for Millies" value="Yes" required>Yes</input>
+        <input type="radio" name="Worked for Millies" value="No" >No</input>
       </div>
       <div class="col-sm-6">
         <label for="positionwhen">If YES, identify the position you held and when:</label>
@@ -341,19 +345,21 @@
     <div class="row">
       <div class="col-sm-6">
         <label for="currentlyemployed">*Are you employed now?</label><br>
-        <input type="radio" name="Currently Employed" required checked>Yes</input>
-        <input type="radio" name="Currently Employed" >No</input>
+        <input type="radio" name="Currently Employed" value="Yes" required>Yes</input>
+        <input type="radio" name="Currently Employed" value="No" >No</input>
       </div>
       <div class="col-sm-6">
         <label for="contactemployer">May we contact your current employer?</label><br>
-        <input type="radio" name="Contact Employer" >Yes</input>
-        <input type="radio" name="Contact Employer" >No</input>
+        <input type="radio" name="Contact Employer" value="Yes" >Yes</input>
+        <input type="radio" name="Contact Employer" value="No" >No</input>
       </div>
     </div>
     <div class="container-fluid form-container">
       <label for="reason4leaving">If presently employed, why are you considering leaving?</label>
       <textarea type="text" class="form-control" rows="5" id="reason4leaving" name="Reason for Leaving"></textarea>
     </div>
+    
+    
     <div class="container-fluid form-container text-center">
       <h2>Employment</h2>
       <p>Start with your present or most recent position. Account for ALL time including periods of unemployment. Use additional pages if necessary to account for ALL time.</p>
@@ -365,51 +371,51 @@
       </div>
       <div class="col-sm-4">
         <label for="telephone">Telephone Number</label>
-        <input type="tel" class="form-control" id="telephone" name="Telephone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="text" class="form-control" id="telephone" name="Empl1 Telephone">
       </div>
       <div class="col-sm-4">
         <label for="address">Full Address (Including Street, City, State & Zip)</label>
-        <textarea type="text" class="form-control" rows="2" id="address" name="Full Address"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="address" name="Empl1 Full Address"></textarea>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-5">
         <label for="title">Your Title</label>
-        <input type="text" class="form-control" id="title" name="Your Title">
+        <input type="text" class="form-control" id="title" name="Empl1 Your Title">
       </div>
       <div class="col-sm-2">
       </div>
       <div class="col-sm-5">
         <label for="supervisor">Supervisor's Name and Title</label>
-        <input type="text" class="form-control" id="supervisor" name="Supervisor's Name and Title">
+        <input type="text" class="form-control" id="supervisor" name="Empl1 Supervisor's Name and Title">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-3">
         <label for="employedfrom">Date Employed "From"</label><br>
-        <input type="date" class="form-control" id="employedfrom" name="Employed From">
+        <input type="date" class="form-control" id="employedfrom" name="Empl1 Employed From">
       </div>
       <div class="col-sm-3">
         <label for="employedto">Date Employed "From"</label><br>
-        <input type="date" class="form-control" id="employedto" name="Employed To">
+        <input type="date" class="form-control" id="employedto" name="Empl1 Employed To">
       </div>
       <div class="col-sm-3">
         <label for="beginningpay">Beginning Pay</label>
-        <input type="number" class="form-control" id="beginningpay" name="Beginning Pay">
+        <input type="number" class="form-control" id="beginningpay" name="Empl1 Beginning Pay">
       </div>
       <div class="col-sm-3">
         <label for="finalpay">Final Pay</label>
-        <input type="number" class="form-control" id="finalpay" name="Final Pay">
+        <input type="number" class="form-control" id="finalpay" name="Empl1 Final Pay">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <label for="reason4leaving">Reason(s) for Leaving</label>
-        <textarea type="text" class="form-control" rows="2" id="reason4leaving" name="Reason(s) for Leaving"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="reason4leaving" name="Empl1 Reason(s) for Leaving"></textarea>
       </div>
       <div class="col-sm-6">
         <label for="workpreformed">Describe the Work Performed</label>
-        <textarea type="text" class="form-control" rows="2" id="workpreformed" name="Work Performed"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="workpreformed" name="Empl1 Work Performed"></textarea>
       </div>
     </div>
     <div class="row">
@@ -419,51 +425,51 @@
       </div>
       <div class="col-sm-4">
         <label for="telephone">Telephone Number</label>
-        <input type="tel" class="form-control" id="telephone" name="Telephone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="text" class="form-control" id="telephone" name="Empl2 Telephone">
       </div>
       <div class="col-sm-4">
         <label for="address">Full Address (Including Street, City, State & Zip)</label>
-        <textarea type="text" class="form-control" rows="2" id="address" name="Full Address"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="address" name="Empl2 Full Address"></textarea>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-5">
         <label for="title">Your Title</label>
-        <input type="text" class="form-control" id="title" name="Your Title">
+        <input type="text" class="form-control" id="title" name="Empl2 Your Title">
       </div>
       <div class="col-sm-2">
       </div>
       <div class="col-sm-5">
         <label for="supervisor">Supervisor's Name and Title</label>
-        <input type="text" class="form-control" id="supervisor" name="Supervisor's Name and Title">
+        <input type="text" class="form-control" id="supervisor" name="Empl2 Supervisor's Name and Title">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-3">
         <label for="employedfrom">Date Employed "From"</label><br>
-        <input type="date" class="form-control" id="employedfrom" name="Employed From">
+        <input type="date" class="form-control" id="employedfrom" name="Empl2 Employed From">
       </div>
       <div class="col-sm-3">
         <label for="employedto">Date Employed "From"</label><br>
-        <input type="date" class="form-control" id="employedto" name="Employed To">
+        <input type="date" class="form-control" id="employedto" name="Empl2 Employed To">
       </div>
       <div class="col-sm-3">
         <label for="beginningpay">Beginning Pay</label>
-        <input type="number" class="form-control" id="beginningpay" name="Beginning Pay">
+        <input type="number" class="form-control" id="beginningpay" name="Empl2 Beginning Pay">
       </div>
       <div class="col-sm-3">
         <label for="finalpay">Final Pay</label>
-        <input type="number" class="form-control" id="finalpay" name="Final Pay">
+        <input type="number" class="form-control" id="finalpay" name="Empl2 Final Pay">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <label for="reason4leaving">Reason(s) for Leaving</label>
-        <textarea type="text" class="form-control" rows="2" id="reason4leaving" name="Reason(s) for Leaving"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="reason4leaving" name="Empl2 Reason(s) for Leaving"></textarea>
       </div>
       <div class="col-sm-6">
         <label for="workpreformed">Describe the Work Performed</label>
-        <textarea type="text" class="form-control" rows="2" id="workpreformed" name="Work Performed"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="workpreformed" name="Empl2 Work Performed"></textarea>
       </div>
     </div>
     <div class="row">
@@ -473,51 +479,51 @@
       </div>
       <div class="col-sm-4">
         <label for="telephone">Telephone Number</label>
-        <input type="tel" class="form-control" id="telephone" name="Telephone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="text" class="form-control" id="telephone" name="Empl3 Telephone">
       </div>
       <div class="col-sm-4">
         <label for="address">Full Address (Including Street, City, State & Zip)</label>
-        <textarea type="text" class="form-control" rows="2" id="address" name="Full Address"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="address" name="Empl3 Full Address"></textarea>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-5">
         <label for="title">Your Title</label>
-        <input type="text" class="form-control" id="title" name="Your Title">
+        <input type="text" class="form-control" id="title" name="Empl3 Your Title">
       </div>
       <div class="col-sm-2">
       </div>
       <div class="col-sm-5">
         <label for="supervisor">Supervisor's Name and Title</label>
-        <input type="text" class="form-control" id="supervisor" name="Supervisor's Name and Title">
+        <input type="text" class="form-control" id="supervisor" name="Empl3 Supervisor's Name and Title">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-3">
         <label for="employedfrom">Date Employed "From"</label><br>
-        <input type="date" class="form-control" id="employedfrom" name="Employed From">
+        <input type="date" class="form-control" id="employedfrom" name="Empl3 Employed From">
       </div>
       <div class="col-sm-3">
         <label for="employedto">Date Employed "From"</label><br>
-        <input type="date" class="form-control" id="employedto" name="Employed To">
+        <input type="date" class="form-control" id="employedto" name="Empl3 Employed To">
       </div>
       <div class="col-sm-3">
         <label for="beginningpay">Beginning Pay</label>
-        <input type="number" class="form-control" id="beginningpay" name="Beginning Pay">
+        <input type="number" class="form-control" id="beginningpay" name="Empl3 Beginning Pay">
       </div>
       <div class="col-sm-3">
         <label for="finalpay">Final Pay</label>
-        <input type="number" class="form-control" id="finalpay" name="Final Pay">
+        <input type="number" class="form-control" id="finalpay" name="Empl3 Final Pay">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <label for="reason4leaving">Reason(s) for Leaving</label>
-        <textarea type="text" class="form-control" rows="2" id="reason4leaving" name="Reason(s) for Leaving"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="reason4leaving" name="Empl3 Reason(s) for Leaving"></textarea>
       </div>
       <div class="col-sm-6">
         <label for="workpreformed">Describe the Work Performed</label>
-        <textarea type="text" class="form-control" rows="2" id="workpreformed" name="Work Performed"></textarea>
+        <textarea type="text" class="form-control" rows="2" id="workpreformed" name="Empl3 Work Performed"></textarea>
       </div>
     </div>
     <div class="container-fluid form-container text-center">
@@ -530,15 +536,15 @@
       </div>
       <div class="col-sm-2">
         <label for="telephone">Telephone Number</label>
-        <input type="tel" class="form-control" id="telephone" name="Telephone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="text" class="form-control" id="telephone" name="Ref 1 Telephone">
       </div>
       <div class="col-sm-4">
         <label for="employer">Employer</label>
-        <input type="text" class="form-control" id="employer" name="Employer">
+        <input type="text" class="form-control" id="employer" name="Ref 1 Employer">
       </div>
       <div class="col-sm-2">
         <label for="relationship">Relationship</label>
-        <input type="text" class="form-control" id="relationship" name="Relationship">
+        <input type="text" class="form-control" id="relationship" name="Ref 1 Relationship">
       </div>
     </div>
     <div class="row">
@@ -548,15 +554,15 @@
       </div>
       <div class="col-sm-2">
         <label for="telephone">Telephone Number</label>
-        <input type="tel" class="form-control" id="telephone" name="Telephone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="tel" class="form-control" id="telephone" name="Ref 2 Telephone Number">
       </div>
       <div class="col-sm-4">
         <label for="employer">Employer</label>
-        <input type="text" class="form-control" id="employer" name="Employer">
+        <input type="text" class="form-control" id="employer" name="Ref 2 Employer">
       </div>
       <div class="col-sm-2">
         <label for="relationship">Relationship</label>
-        <input type="text" class="form-control" id="relationship" name="Relationship">
+        <input type="text" class="form-control" id="relationship" name="Ref 2 Relationship">
       </div>
     </div>
     <div class="row">
@@ -566,15 +572,15 @@
       </div>
       <div class="col-sm-2">
         <label for="telephone">Telephone Number</label>
-        <input type="tel" class="form-control" id="telephone" name="Telephone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input type="text" class="form-control" id="telephone" name="Ref 3 Telephone Number">
       </div>
       <div class="col-sm-4">
         <label for="employer">Employer</label>
-        <input type="text" class="form-control" id="employer" name="Employer">
+        <input type="text" class="form-control" id="employer" name="Ref 3 Employer">
       </div>
       <div class="col-sm-2">
         <label for="relationship">Relationship</label>
-        <input type="text" class="form-control" id="relationship" name="Relationship">
+        <input type="text" class="form-control" id="relationship" name="Ref 3 Relationship">
       </div>
     </div>
     <div class="container-fluid form-container text-center">
@@ -598,18 +604,18 @@ If employed, I agree I shall not engage in any outside activity which would invo
     <div class="row">
       <div class="col-sm-6"> 
         <label for="consenttoabove">*Do you consent to the above?</label><br>
-        <input type="radio" name="yesno" name="Consent to the Above" required checked>Yes</input>
-        <input type="radio" name="yesno" name="Consent to the Above">No</input>
+        <input type="radio" name="yesno" name="Consent to the Above" value="Yes" required>Yes</input>
+        <input type="radio" name="yesno" name="Consent to the Above" value="No">No</input>
       </div>
       <div class="col-sm-6">
         <label for="todaydate">*Today's Date</label><br>
         <input type="date" class="form-control" id="todaydate" name="Today's Date" required>
+      </div>
     </div>
-    <div class="container-fluid form-container text-center">
+    <div class="container-fluid form-container">
       <input type="submit" class="btn form-btn" value="send">
     </div>
   </div>
-</div>
 </form>
 <script>
     var contactform =  document.getElementById('contactform');

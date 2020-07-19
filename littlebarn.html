@@ -71,7 +71,7 @@ Given that we live surrounded by horses and on an island so rich in Equine histo
 <div class="container text-right required">
   <p>*Required field</p>
 </div>
-<form action="https://formspree.io/xeqrppwl" method="POST">
+<form id="contactform" method="POST">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
@@ -121,13 +121,14 @@ Given that we live surrounded by horses and on an island so rich in Equine histo
       <input type="submit" class="btn form-btn" value="send">
     </div>
   </div>
-  <input type="hidden" name="_next" value="https://cschmity.github.io/millies/littlebarnty.html" />
 </form>
-
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'xeqrppwl');
+</script>
 <div class="container-fluid text-center">
   <a href="#top" class="pageup" onclick="scrollToTop();return false"><img src="images/up.svg" class="up"></a>
 </div>
-
 
 
 <div class="container-fluid text-center footer">
