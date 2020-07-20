@@ -185,10 +185,6 @@ label {
   }
 }
 @media screen and (max-width: 767px) {
-  .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-  }
   .hdr > h3 {
 	margin-top:10px;
 	margin-bottom:10px;
