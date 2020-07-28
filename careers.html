@@ -57,8 +57,6 @@
 <div class="container-fluid sitewrap">
 <div class="container-fluid text-center title">
   <h1>CAREERS</h1>
-</div>
-<div class="container-fluid text-center">
   <div class="row">
     <div class="col-sm-6">
       <div class="thumbnail">
@@ -83,10 +81,8 @@
 <div class="container-fluid text-center pgraph">
   <p>Looking for a fun, fast-paced working environment? Millie's on Main hires for our May–October season. Apply by submitting the online application below. (You may attach a resumé to the form, if you wish.) We hire bartenders, kitchen help, line cooks and wait staff. If you wish, you may <a href="images/JOB_APP_Millie_s_on_Main.pdf" target="_blank">download an employment application</a>, fill it out and mail it to us or use our online employment application.</p>
 </div>
-</div>
 
 <form id="contactform" method="POST">
-  <div class="container">
     <div class="container-fluid form-container text-center">
       <h2>Millie's on Main Employment Application</h2>
     </div>
@@ -95,10 +91,10 @@
   This application for employment is active for a period of six months. Consideration for employment after six months has passed requires a new application. Candidates for employment will only be considered if they meet the minimum qualifications for the position they seek.</p>
     </div>
     <div class="container text-right required">
-      <p>*Required field</p>
+      <p><span class="req">*</span>Required field</p>
     </div>
     <div class="container-fluid form-container">
-    <label for="position">*Position Applying For</label>
+    <label for="position"><span class="req">*</span>Position Applying For</label>
       <select class="form-control" id="position" name="Position Applying For" required>
         <option value="Any Available">Any Available</option>
         <option value="Bartender">Bartender</option>
@@ -108,7 +104,7 @@
       </select>
     </div>
     <div class="container-fluid form-container">
-      <label for="function">*Can you perform the essential functions of the position identified above with or without a reasonable accommodation?</label><br>
+      <label for="function"><span class="req">*</span>Can you perform the essential functions of the position identified above with or without a reasonable accommodation?</label><br>
       <input type="radio" value="Yes"  name="Can You Preform Job Duties" required>Yes</input>
       <input type="radio" value="no" name="Can You Preform Job Duties">No</input>
     </div>
@@ -122,7 +118,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <label for="beginwork">*When would you be available to begin work?</label><br>
+        <label for="beginwork"><span class="req">*</span>When would you be available to begin work?</label><br>
         <input type="date" class="form-control" id="beginwork" name="Begin Work" required>
       </div>
       <div class="col-sm-6">
@@ -132,52 +128,52 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <label for="name">*First Name:</label>
+        <label for="name"><span class="req">*</span>First Name:</label>
         <input type="text" class="form-control" id="name"name="First Name" required>
-        <label for="name">*Middle Name:</label>
+        <label for="name"><span class="req">*</span>Middle Name:</label>
         <input type="text" class="form-control" id="name" name="Middle Name" required>
-        <label for="name">*Last Name:</label>
+        <label for="name"><span class="req">*</span>Last Name:</label>
         <input type="text" class="form-control" id="name" name="Last Name" required>
-        <label for="phone">*Phone:</label>
-        <input type="text" class="form-control" id="phone" placeholder="123-456-7890">
+        <label for="phone"><span class="req">*</span>Phone:</label>
+        <input type="text" class="form-control" id="phone" placeholder="123-456-7890" required>
       </div>
       <div class="col-sm-6">
-        <label for="address1">*Address Line 1:</label>
+        <label for="address1"><span class="req">*</span>Address Line 1:</label>
         <input type="text" class="form-control" id="address1" name="Address Line 1" required>
         <label for="address2">Address Line 2:</label>
         <input type="text" class="form-control" id="address2" name="Address Line 2">
           <div class="row">
           <div class="col-sm-4">
-            <label for="city">*City:</label>
+            <label for="city"><span class="req">*</span>City:</label>
             <input type="text" class="form-control" id="city" name="City" required>
           </div>
           <div class="col-sm-4">
-            <label for="state">*State:</label>
+            <label for="state"><span class="req">*</span>State:</label>
             <input type="text" class="form-control" id="state" name="State" required>
           </div>
           <div class="col-sm-4">
-            <label for="zip">*Zip:</label>
+            <label for="zip"><span class="req">*</span>Zip:</label>
             <input type="number" class="form-control" id="zip" name="Zip" required>
           </div>
         </div>
-        <label for="email">*Email:</label>
+        <label for="email"><span class="req">*</span>Email:</label>
         <input type="email" class="form-control" id="email" name="email address" required>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <label for="over18">*Are you over the age of 18?</label><br>
+        <label for="over18"><span class="req">*</span>Are you over the age of 18?</label><br>
         <input type="radio"  name="Are you over the age of 18?" value="Yes" required>Yes</input>
         <input type="radio" name="Are you over the age of 18?" value="No" >No</input><br>
-        <label for="eligableusa">*Are you legally eligible to be employed in the United States?</label><br>
+        <label for="eligableusa"><span class="req">*</span>Are you legally eligible to be employed in the United States?</label><br>
         <input type="radio" name="eligible to work in usa" value="Yes" required>Yes</input>
         <input type="radio" name="eligible to work in usa" value="No" >No</input>
       </div>
       <div class="col-sm-6">
-        <label for="felony">*Have you EVER been convicted of a felony or misdemeanor?</label><br>
+        <label for="felony"><span class="req">*</span>Have you EVER been convicted of a felony or misdemeanor?</label><br>
         <input type="radio" name="Felony/misdemeanor?" value="Yes" required>Yes</input>
         <input type="radio" name="Felony/misdemeanor?" value="No" >No</input><br>
-        <label for="pendingcharges">*Do you currently have any pending felony charges against you?</label><br>
+        <label for="pendingcharges"><span class="req">*</span>Do you currently have any pending felony charges against you?</label><br>
         <input type="radio" name="Pending Charges?" value="Yes" required>Yes</input>
         <input type="radio" name="Pending Charges?" value="No" >No</input>
       </div>
@@ -302,7 +298,7 @@
       <textarea type="text" class="form-control" rows="5" id="summarizeskills" name="Summarize Skills"></textarea>
     </div>
     <div class="container-fluid form-container">
-      <label for="orginizations">*Do you belong to any professional, trade, business or civic organization which may be relevant to the position you seek?</label><br>
+      <label for="orginizations"><span class="req">*</span>Do you belong to any professional, trade, business or civic organization which may be relevant to the position you seek?</label><br>
       <input type="radio" name="Belong to Orginizations" value="Yes" required>Yes</input>
       <input type="radio" name="Belong to Orginizations" value="No" >No</input>
     </div>
@@ -315,7 +311,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <label for="applied4millies">*Have you applied for a job with Millie's before?</label><br>
+        <label for="applied4millies"><span class="req">*</span>Have you applied for a job with Millie's before?</label><br>
         <input type="radio" name="Applied for Millies" value="Yes" required>Yes</input>
         <input type="radio" name="Applied for Millies" value="No" >No</input>
       </div>
@@ -326,7 +322,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <label for="worked4millies">*Have you worked for Millie's before?</label><br>
+        <label for="worked4millies"><span class="req">*</span>Have you worked for Millie's before?</label><br>
         <input type="radio" name="Worked for Millies" value="Yes" required>Yes</input>
         <input type="radio" name="Worked for Millies" value="No" >No</input>
       </div>
@@ -344,7 +340,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <label for="currentlyemployed">*Are you employed now?</label><br>
+        <label for="currentlyemployed"><span class="req">*</span>Are you employed now?</label><br>
         <input type="radio" name="Currently Employed" value="Yes" required>Yes</input>
         <input type="radio" name="Currently Employed" value="No" >No</input>
       </div>
@@ -603,12 +599,12 @@ If employed, I agree I shall not engage in any outside activity which would invo
     </div>
     <div class="row">
       <div class="col-sm-6"> 
-        <label for="consenttoabove">*Do you consent to the above?</label><br>
+        <label for="consenttoabove"><span class="req">*</span>Do you consent to the above?</label><br>
         <input type="radio" name="Consent to the Above" value="Yes" required>Yes</input>
-        <input type="radio" name="Consent to the Above" value="No">No</input>
+        <input type="radio"  name="Consent to the Above" value="No">No</input>
       </div>
       <div class="col-sm-6">
-        <label for="todaydate">*Today's Date</label><br>
+        <label for="todaydate"><span class="req">*</span>Today's Date</label><br>
         <input type="date" class="form-control" id="todaydate" name="Today's Date" required>
       </div>
     </div>
@@ -617,6 +613,7 @@ If employed, I agree I shall not engage in any outside activity which would invo
     </div>
   </div>
 </form>
+</div>
 <script>
     var contactform =  document.getElementById('contactform');
     contactform.setAttribute('action', '//formspree.io/' + 'mdowpbjw');
