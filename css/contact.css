@@ -2,19 +2,25 @@
 /* CSS Document */
 .title > h1 {
 	font-family: 'Crimson Text', serif;
-	margin:20px 0px 35px 0px;
+	margin:20px 0px 10px 0px;
 	color:#5B7CB5;
 	font-weight:bold;
 }
 .hours {
 	font-family: 'Crimson Text', serif;
+	margin-bottom:20px;
 }
-.hours > div > div > h3 {
+.hours > div > h3 {
   font-weight:bold;
+}
+.hours > hr {
+	display:none;
+	border-top: 1px solid #5B7CB5;
+	margin:15px 15%;
 }
 .map {
 	padding:5px;
-	margin:4px;
+	margin:0 4px;
 	background-color:#5B7CB5;
 	height:450px;
 }
@@ -25,7 +31,7 @@
 .thumbnail {
   border: none;
   border-radius: 0;
-  margin:20px 0px;
+  margin:30px 0px;
 }
 .vcenter {
 	margin:55px 0 0 0;
@@ -33,5 +39,8 @@
 @media screen and (max-width: 767px) {
 .vcenter {
 	margin:5px 0;
+}
+.hours > hr {
+	display:block;
 }
 }

@@ -2,12 +2,8 @@
 /* CSS Document */
 
 /* navigation */
-
 a {
   color:#5B7CB5;
-}
-hr {
-	width:150px;
 }
 a:hover {
   color:#5B7CB5;
@@ -140,6 +136,9 @@ a:hover {
 	color:#ED1C24;
 	margin:0;
 }
+.req {
+	color:#ED1C24;
+}
 label {
 	margin-top:15px;
 }
@@ -184,14 +183,22 @@ label {
     -webkit-transform: translateY(0%);
   }
 }
-@media screen and (max-width: 767px) {
-  .hdr > h3 {
-	margin-top:10px;
-	margin-bottom:10px;
+@media screen and (max-width: 900px) {
+.hdr {
+	width:100%;
 }
-  .hdr > h1 {
+.hdr > h3 {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.hdr > h1 {
 	margin:10px;
-	font-size:42px;
+}
+}
+@media screen and (max-width: 767px) {
+
+.hdr > h1 {
+  font-size:42px;
 }
 }
 

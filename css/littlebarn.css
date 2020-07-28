@@ -2,10 +2,16 @@
 /* CSS Document */
 .pgraph {
   margin:25px 0 0 0;
+  font-family: 'EB Garamond', serif;
 }
-.pgraph1, .pgraph2 {
+.pgraph > h4 {
 	line-height:1.6;
+    font-weight:600;
 }
-.pgraph2 {
+.pgraph > h4:last-of-type {
   color:#BBBDC0;
+}
+.pgraph > h3 {
+	font-family: 'Crimson Text', serif;
+	font-weight:bold;
 }

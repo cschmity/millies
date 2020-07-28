@@ -1,11 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
-.aboutus >h3, .aboutus >h1, .reviews >h1, .reviews >h2  {
-}
 .aboutus >h1, .reviews >h1 {
 	font-family: 'Crimson Text', serif;
 }
-.aboutus >h3,.aboutus >p, .reviews >h2 {
+.aboutus >h3,.aboutus >p, .reviews >h3 {
 	font-family: 'EB Garamond', serif;
 }
 .aboutus >h1 {
@@ -39,11 +37,13 @@
 	color:#58585B;
 	font-style:italic;
 }
+.reviews > hr {
+	width:150px;
+}
 .logo-small {
   color: #5B7CB5;
   font-size: 50px;
 }
-
 .logo {
   color: #5B7CB5;
   font-size: 200px;
