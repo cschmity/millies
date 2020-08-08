@@ -39,7 +39,7 @@
 }
 .reviews > hr {
 	width:250px;
-	border-top:2px solid #95BBE0;
+	border-top:2px solid #E6E7E8;
 }
 .logo-small {
   color: #5B7CB5;
@@ -66,8 +66,11 @@
 	font-weight:bold;
 	font-family: 'Crimson Text', serif;
 }
-.tabs > a:hover {
+.tabs > a:hover, .tabs > a:focus {
 	text-decoration:none;
+}
+.tabs > a:focus {
+	color:#5B7CB5;
 }
 
 .thumbnail img {
